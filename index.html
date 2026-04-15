@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Epoch Siege</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <h1>Epoch Siege</h1>
+      <p>Click the world to deploy units. Capture all relic sites before the AI does.</p>
+      <div class="stats">
+        <span id="era">Era: Caveman</span>
+        <span id="level">Level: 1</span>
+        <span id="xp">XP: 0</span>
+        <span id="currency">Food: 120</span>
+      </div>
+      <div class="controls">
+        <button id="spawnBtn">Deploy Unit (40 food)</button>
+        <button id="resetBtn">Reset Progress</button>
+      </div>
+      <p id="message"></p>
+    </div>
+    <canvas id="game"></canvas>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
